@@ -1,0 +1,10 @@
+<div class="container">
+  <% @flats.each do |flat|%>
+  <div class="card">
+    <h3><%= flat.name %></h3>
+    <p><%= flat.address%></p>
+    <%= link_to "Check this ish...", flat_path(flat) %>
+  </div>
+<% end %>
+</div>
+<p>Find me in app/views/flats/index.html.erb</p>

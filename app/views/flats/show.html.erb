@@ -1,0 +1,8 @@
+<h1><%= @flat.name %></h1>
+
+<p><%= @flat.address %></p>
+<%= link_to "Edit", edit_flat_path(@flat)%>
+<%= link_to "Eradicate me", flat_path(@flat), method: :delete%>
+<%= link_to 'Back', flats_path %>
+
+<p>Find me in app/views/flats/show.html.erb</p>
